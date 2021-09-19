@@ -19,8 +19,8 @@ function App() {
 
   return (
     <div className="App">
-      {console.log(images)}
-    Hello React
+      <h1>Welcome to SpaceStagram!</h1>
+      <ImagesDisplay images={images} />
     </div>
   );
 }
