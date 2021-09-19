@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import axios from "axios";
 import React, { useState, useEffect} from 'react'
 import ImagesDisplay from "./ImagesDisplay"
