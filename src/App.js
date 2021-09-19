@@ -6,17 +6,12 @@ const url =`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_
 
 function App() {
   const [images, setImages] = useState([])
-  const [loading, setLoading] = useState(true)
 
   const fetchData = async () => {
-    setLoading(true)
-    const response = await fetch(url)
-    const data = await response.json()
-    .then (data => setImages(data))
-    setLoading(false)
+    const result = await axios.get(url)
+    setImages(result.data)
+   
   }
-
-  
 
   useEffect(() => {
     fetchData()
@@ -24,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      {console.log(images)}
     Hello React
     </div>
   );
