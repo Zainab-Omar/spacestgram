@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import redheart from './redheart.svg'
 import greyheart from './greyheart.svg'
 import ShowDetails from './ShowDetails'
+
 function Image({image}){
     const [like, setLike] = useState(false)
     const [showDetails, setShowDetails] = useState(false)
@@ -14,7 +15,7 @@ function Image({image}){
                 alt="like button"
                  className="like"
                  onClick={() => setLike((curr) => !curr)}
-                width="20" height="20" /><br/>
+                 width="30" height="30" /><br/>
 
             <button onClick={() => setShowDetails(!showDetails)}>Show Picture explanation</button>
             {showDetails && <ShowDetails details={image.explanation} />}
