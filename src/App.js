@@ -2,7 +2,7 @@ import './App.css';
 import axios from "axios";
 import React, { useState, useEffect} from 'react'
 import ImagesDisplay from "./ImagesDisplay"
-const url =`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_KEY}&count=5`
+const url =`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_KEY}&count=10`
 
 function App() {
   const [images, setImages] = useState([])
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Welcome to SpaceStagram!</h1>
+      <h1 className="page-title">Welcome to SpaceStagram!</h1>
       <ImagesDisplay images={images} />
     </div>
   );

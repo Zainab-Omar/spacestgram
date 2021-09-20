@@ -1,6 +1,7 @@
-/* .App {
+.App {
   text-align: center;
-} */
+  margin-left: 30px;
+}
 
 .App-logo {
   height: 40vmin;
@@ -39,13 +40,32 @@
 
 
 .image {
-  width: 300px;
+  
+  width: 500px;
+  height: 600;
   margin: 3rem;
   display: flex;
   flex-direction: column;
-  background-color:plum;
+  background-color: lightcyan;
   padding: 2rem;
   position: relative;
   border-radius: 0.5rem;
   float: left;
+}
+
+.page-title {
+  text-align: center;
+  color: darkblue;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+.details{
+  background-color: white;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
